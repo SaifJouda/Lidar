@@ -27,6 +27,6 @@ public class SlideMove : MonoBehaviour
 
         // Update the object's position
         wall.transform.position = new Vector3(10+sliderValue*100,0,0);
-        camera.transform.position = new Vector3(((wall.transform.position.x-10)/2),0,-14-sliderValue*48);
+        camera.transform.position = new Vector3(((wall.transform.position.x-10)/2),0,-16-sliderValue*66);
     }
 }

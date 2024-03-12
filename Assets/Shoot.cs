@@ -39,11 +39,11 @@ public class Shoot : MonoBehaviour
         }
     }
 
-    public void Report(float t, float v)
+    public void Report(float t)
     {
         timeText.text = "Time: "+t.ToString("F2") + "s";
         float a=1.1f;
-        float du=t*v*a;
+        float du=t*projectileSpeed*a;
         distanceText.text = "Distance: "+du.ToString("F2") + "m";
     }
 }

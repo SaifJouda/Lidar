@@ -4,6 +4,7 @@ public class Destroy : MonoBehaviour
 {
     public Shoot report;
     private float spawnTime;
+    
 
     private void Start()
     {
@@ -15,7 +16,8 @@ public class Destroy : MonoBehaviour
 
         float timeAlive = Time.time - spawnTime;
 
-        report.Report(timeAlive, GetComponent<Rigidbody>().velocity.x);
+        report.Report(timeAlive);
+  
 
         Destroy(gameObject); 
 
